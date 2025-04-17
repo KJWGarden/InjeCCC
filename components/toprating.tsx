@@ -30,7 +30,7 @@ export default function Toprating() {
           alt="메뉴사진"
           width={400}
           height={300}
-          className="cursor-pointer rounded-lg shadow-xl"
+          className="cursor-pointer shadow-xl"
           onClick={() => setIsOpen(true)}
         />
       </div>
