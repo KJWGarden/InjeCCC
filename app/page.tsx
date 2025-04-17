@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: "INJE CCC",
     images: [
       {
-        url: "/public/cover.jpg",
+        url: "https://inje-ccc.vercel.app/cover.jpg",
         width: 1200,
         height: 630,
         alt: "INJE CCC OpenGraph Image",
