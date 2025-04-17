@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "INJE CCC",
     description: "INJE CCC 갓같가 가치를 채우는 시간",
-    url: "https://yourdomain.com",
+    url: "https://inje-ccc.vercel.app",
     siteName: "INJE CCC",
     images: [
       {
