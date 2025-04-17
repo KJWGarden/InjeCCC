@@ -19,11 +19,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "INJE CCC",
     description: "INJE CCC 갓같가 가치를 채우는 시간",
-    url: "https://inje-ccc.vercel.app",
+    url: "https://inje-ccc.vercel.app/",
     siteName: "INJE CCC",
     images: [
       {
-        url: "/cover.jpg",
+        url: "https://inje-ccc.vercel.app/cover.jpg",
         width: 1200,
         height: 630,
         alt: "INJE CCC OpenGraph Image",
