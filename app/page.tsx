@@ -1,34 +1,11 @@
 "use client";
-
 import Toprating from "@/components/toprating";
 import Header from "./components/header";
 import Navbar from "@/components/navigation";
 import { useState } from "react";
-import TeamChart from "@/components/disciples";
-import { Metadata } from "next";
+import TeamChart from "@/components/teamChart";
 
-export const metadata: Metadata = {
-  title: "인제대 CCC",
-  description: "인제대 CCC와 함께하는 갓같가",
-  openGraph: {
-    title: "INJE CCC",
-    description: "INJE CCC 갓같가 가치를 채우는 시간",
-    url: "https://inje-ccc.vercel.app/",
-    siteName: "INJE CCC",
-    images: [
-      {
-        url: "https://inje-ccc.vercel.app/cover.jpg",
-        width: 1200,
-        height: 630,
-        alt: "INJE CCC OpenGraph Image",
-      },
-    ],
-    locale: "ko_KR",
-    type: "website",
-  },
-};
-
-export default function Home() {
+export default function HomeClient() {
   const [activeTab, setActiveTab] = useState("home");
   return (
     <div className="overflow-y-scroll">

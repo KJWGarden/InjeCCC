@@ -15,7 +15,7 @@ type TeamChartProps = {
   teamName: string;
 };
 export default function TeamChart({ teamName }: TeamChartProps) {
-  const disciples = students
+  const filterdata = students
     .filter((student) => student.team === teamName)
     .sort((a, b) => b.filledHours - a.filledHours);
 
@@ -34,7 +34,7 @@ export default function TeamChart({ teamName }: TeamChartProps) {
       </div>
       <div className="w-full h-full overflow-y-scroll">
         <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
-          <BarChart layout="vertical" accessibilityLayer data={disciples}>
+          <BarChart layout="vertical" accessibilityLayer data={filterdata}>
             <CartesianGrid vertical={true} horizontal={false} />
             <XAxis
               type="number" // ✅ X축은 숫자형
