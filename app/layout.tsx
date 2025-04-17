@@ -16,6 +16,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "인제대 CCC",
   description: "인제대 CCC와 함께하는 갓같가",
+  icons: {
+    icon: "/favicon.png",
+  },
   openGraph: {
     title: "INJE CCC",
     description: "INJE CCC 갓같가 가치를 채우는 시간",
