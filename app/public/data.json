@@ -5,7 +5,7 @@
     "department": "의료IT학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 8
+    "filledHours": 4
   },
   {
     "id": "2",
@@ -13,7 +13,7 @@
     "department": "음악학과",
     "level": "순장",
     "team": "헤세드순",
-    "filledHours": 10
+    "filledHours": 6
   },
   {
     "id": "3",
@@ -21,7 +21,7 @@
     "department": "반도체공학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 12
+    "filledHours": 8
   },
   {
     "id": "4",
@@ -53,7 +53,7 @@
     "department": "멀티미디어학부",
     "level": "순장",
     "team": "헤세드순",
-    "filledHours": 4
+    "filledHours": 2
   },
   {
     "id": "8",
@@ -61,7 +61,7 @@
     "department": "보건안전공학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 8
+    "filledHours": 4
   },
   {
     "id": "9",
@@ -93,7 +93,7 @@
     "department": "유아교육학과",
     "level": "순장",
     "team": "헤세드순",
-    "filledHours": 4
+    "filledHours": 2
   },
   {
     "id": "13",
@@ -101,6 +101,6 @@
     "department": "컴퓨터공학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 4
+    "filledHours": 2
   }
 ]
