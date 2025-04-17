@@ -44,7 +44,7 @@ export default function Toprating() {
           />
         </DialogContent>
       </Dialog>
-      <div className="flex flex-col lg:w-[40vw]">
+      <div className="flex flex-col w-full lg:w-[40vw]">
         <div className="text-lg font-bold">Top 10</div>
         <p className="text-xs">현재 시간을 가장 많이 채운 10명입니다!</p>
         <div>
