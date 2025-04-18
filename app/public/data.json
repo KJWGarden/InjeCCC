@@ -5,7 +5,7 @@
     "department": "의료IT학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 4
+    "filledHours": 5
   },
   {
     "id": "2",
@@ -21,7 +21,7 @@
     "department": "반도체공학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 8
+    "filledHours": 10
   },
   {
     "id": "4",
@@ -29,7 +29,7 @@
     "department": "식품영양공학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 3
+    "filledHours": 5
   },
   {
     "id": "5",
@@ -45,7 +45,7 @@
     "department": "의생명공학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 3
+    "filledHours": 4
   },
   {
     "id": "7",
@@ -53,7 +53,7 @@
     "department": "멀티미디어학부",
     "level": "순장",
     "team": "헤세드순",
-    "filledHours": 2
+    "filledHours": 10
   },
   {
     "id": "8",
@@ -61,7 +61,7 @@
     "department": "보건안전공학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 4
+    "filledHours": 7
   },
   {
     "id": "9",
@@ -85,7 +85,7 @@
     "department": "간호학과",
     "level": "순장",
     "team": "예닮순",
-    "filledHours": 2
+    "filledHours": 3
   },
   {
     "id": "12",
@@ -117,7 +117,7 @@
     "department": "의공학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 0
+    "filledHours": 2
   },
   {
     "id": "16",
@@ -173,7 +173,7 @@
     "department": "경영학과",
     "level": "순원",
     "team": "제자순",
-    "filledHours": 0
+    "filledHours": 2
   },
   {
     "id": "23",
@@ -213,7 +213,7 @@
     "department": "간호학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 0
+    "filledHours": 4
   },
   {
     "id": "28",
@@ -221,7 +221,7 @@
     "department": "자유전공학부",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 0
+    "filledHours": 7
   },
   {
     "id": "29",
@@ -269,7 +269,7 @@
     "department": "제약공학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 0
+    "filledHours": 4
   },
   {
     "id": "35",
@@ -334,5 +334,45 @@
     "level": "순원",
     "team": "헤세드순",
     "filledHours": 0
+  },
+  {
+    "id": "43",
+    "name": "김정원",
+    "department": "컴퓨터공학과",
+    "level": "순장",
+    "team": "제자순",
+    "filledHours": 10
+  },
+  {
+    "id": "44",
+    "name": "송에스더",
+    "department": "간호학과",
+    "level": "순장",
+    "team": "헤세드순",
+    "filledHours": 11
+  },
+  {
+    "id": "45",
+    "name": "심민균",
+    "department": "환경공학과",
+    "level": "순장",
+    "team": "제자순",
+    "filledHours": 6
+  },
+  {
+    "id": "46",
+    "name": "신동건",
+    "department": "물리치료학과",
+    "level": "순장",
+    "team": "제자순",
+    "filledHours": 3
+  },
+  {
+    "id": "47",
+    "name": "장가은",
+    "department": "특수교육학과",
+    "level": "순장",
+    "team": "헤세드순",
+    "filledHours": 6
   }
 ]
