@@ -107,7 +107,7 @@ export default function Toprating() {
           delay: 0.2,
           ease: easeOut,
         }}
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.1 }}
       >
         <div className="text-lg font-bold">{activeTab} Top 10</div>
         <p className="text-xs">{descriptionMap[activeTab]}</p>
