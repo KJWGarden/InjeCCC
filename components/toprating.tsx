@@ -1,21 +1,42 @@
 "use client";
+
 import students from "@/app/public/data.json";
 import { Separator } from "./ui/separator";
 import { motion } from "motion/react";
 import Image from "next/image";
 import { useState } from "react";
 import { Dialog, DialogContent } from "./ui/dialog";
+import MotionTabs from "./tabSelect";
+import { easeOut } from "motion";
 
 export default function Toprating() {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState("전체");
 
   const top10 = students
     .sort((a, b) => b.filledHours - a.filledHours)
     .slice(0, 10);
 
+  const leaderTop10 = students
+    .filter((student) => student.level === "순장")
+    .sort((a, b) => b.filledHours - a.filledHours)
+    .slice(0, 10);
+
+  const memberTop10 = students
+    .filter((student) => student.level === "순원")
+    .sort((a, b) => b.filledHours - a.filledHours)
+    .slice(0, 10);
+
+  const selectedTop10 =
+    activeTab === "전체"
+      ? top10
+      : activeTab === "순장"
+      ? leaderTop10
+      : memberTop10;
+
   let currentRank = 1;
 
-  const rankedTop10 = top10.map((student, index, array) => {
+  const rankedTop10 = selectedTop10.map((student, index, array) => {
     let isJoint = false;
     if (
       (index > 0 && student.filledHours === array[index - 1].filledHours) ||
@@ -28,7 +49,6 @@ export default function Toprating() {
     if (index > 0 && student.filledHours === array[index - 1].filledHours) {
       // 바로 위 학생이랑 같으면 rank 유지
     } else {
-      // 다르면 등수 업데이트
       currentRank = index + 1;
     }
     return {
@@ -38,6 +58,11 @@ export default function Toprating() {
     };
   });
 
+  const descriptionMap: { [key: string]: string } = {
+    전체: "현재 시간을 가장 많이 채운 10명입니다!",
+    순원: "현재 시간을 가장 많이 채운 순원 10명입니다!",
+    순장: "현재 시간을 가장 많이 채운 순장 10명입니다!",
+  };
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -69,9 +94,23 @@ export default function Toprating() {
           />
         </DialogContent>
       </Dialog>
-      <div className="flex flex-col w-full lg:w-[40vw]">
-        <div className="text-lg font-bold">Top 10</div>
-        <p className="text-xs">현재 시간을 가장 많이 채운 10명입니다!</p>
+      <div className="w-full h-full">
+        <MotionTabs activeTab={activeTab} setActiveTab={setActiveTab} />
+      </div>
+      <motion.div
+        className="flex flex-col w-full lg:w-[40vw]"
+        key={activeTab}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.5,
+          delay: 0.2,
+          ease: easeOut,
+        }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div className="text-lg font-bold">{activeTab} Top 10</div>
+        <p className="text-xs">{descriptionMap[activeTab]}</p>
         <div>
           {rankedTop10.map((student) => (
             <div key={student.id} className="w-full">
@@ -107,7 +146,7 @@ export default function Toprating() {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }
