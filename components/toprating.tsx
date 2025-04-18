@@ -14,8 +14,6 @@ export default function Toprating() {
     .slice(0, 10);
 
   let currentRank = 1;
-  let prevHours: number | null = null;
-  let sameRankCount = 0;
 
   const rankedTop10 = top10.map((student, index, array) => {
     let isJoint = false;
