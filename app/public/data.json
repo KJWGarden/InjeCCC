@@ -374,5 +374,13 @@
     "level": "순장",
     "team": "헤세드순",
     "filledHours": 6
+  },
+  {
+    "id": "48",
+    "name": "권현진",
+    "department": "간호학과",
+    "level": "순원",
+    "team": "헤세드순",
+    "filledHours": 2
   }
 ]
