@@ -1,5 +1,6 @@
 import students from "@/app/public/data.json";
 import { motion } from "motion/react";
+import DDay from "./day";
 
 type TotalProps = {
   ActiveTab: string;
@@ -40,6 +41,9 @@ export default function TotalCal({ ActiveTab }: TotalProps) {
     >
       <div className="text-sm">{prefixText} 갓과 같이한 가치있는 시간</div>
       <div className="text-xl font-bold">총 {totalFilledHours} 시간</div>
+      <div>
+        <DDay targetDate="2025-06-23" />
+      </div>
     </motion.div>
   );
 }
