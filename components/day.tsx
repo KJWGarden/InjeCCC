@@ -1,6 +1,6 @@
 "use client";
 
-import { easeInOut, easeOut } from "motion";
+import { easeOut } from "motion";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
