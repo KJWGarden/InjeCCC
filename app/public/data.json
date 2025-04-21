@@ -21,7 +21,7 @@
     "department": "반도체공학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 12
+    "filledHours": 14
   },
   {
     "id": "4",
@@ -29,7 +29,7 @@
     "department": "식품영양공학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 5
+    "filledHours": 7
   },
   {
     "id": "5",
@@ -165,7 +165,7 @@
     "department": "방사선학과",
     "level": "순원",
     "team": "제자순",
-    "filledHours": 0
+    "filledHours": 2
   },
   {
     "id": "22",
@@ -317,7 +317,7 @@
     "department": "사회복지학과",
     "level": "순원",
     "team": "예닮순",
-    "filledHours": 0
+    "filledHours": 2
   },
   {
     "id": "41",
