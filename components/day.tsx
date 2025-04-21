@@ -47,7 +47,7 @@ export default function DDay({ targetDate }: DDayProps) {
       }}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.8, ease: easeOut }}
+      transition={{ duration: 0.6, delay: 1.0, ease: easeOut }}
       viewport={{ once: true, amount: 0.2 }}
     >
       <Link href={"https://www.kccc.org/?p=sc#"}>
