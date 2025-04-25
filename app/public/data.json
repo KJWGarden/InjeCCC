@@ -21,7 +21,7 @@
     "department": "반도체공학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 14
+    "filledHours": 19
   },
   {
     "id": "4",
@@ -69,7 +69,7 @@
     "department": "특수교육학과",
     "level": "순장",
     "team": "헤세드순",
-    "filledHours": 4
+    "filledHours": 6
   },
   {
     "id": "10",
@@ -85,7 +85,7 @@
     "department": "간호학과",
     "level": "순장",
     "team": "예닮순",
-    "filledHours": 6
+    "filledHours": 8
   },
   {
     "id": "12",
@@ -341,7 +341,7 @@
     "department": "컴퓨터공학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 10
+    "filledHours": 13
   },
   {
     "id": "44",
@@ -357,7 +357,7 @@
     "department": "환경공학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 6
+    "filledHours": 13
   },
   {
     "id": "46",
@@ -373,7 +373,7 @@
     "department": "특수교육학과",
     "level": "순장",
     "team": "헤세드순",
-    "filledHours": 9
+    "filledHours": 12
   },
   {
     "id": "48",
@@ -382,5 +382,13 @@
     "level": "순원",
     "team": "헤세드순",
     "filledHours": 2
+  },
+  {
+    "id": "49",
+    "name": "여준원",
+    "department": "미디어커뮤니케이션학과",
+    "level": "순장",
+    "team": "제자순",
+    "filledHours": 3
   }
 ]
