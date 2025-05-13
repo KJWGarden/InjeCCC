@@ -261,7 +261,7 @@
     "department": "물리치료학과",
     "level": "순원",
     "team": "제자순",
-    "filledHours": 3
+    "filledHours": 9
   },
   {
     "id": "34",
@@ -349,7 +349,7 @@
     "department": "간호학과",
     "level": "순장",
     "team": "헤세드순",
-    "filledHours": 14
+    "filledHours": 20
   },
   {
     "id": "45",
@@ -373,7 +373,7 @@
     "department": "특수교육학과",
     "level": "순장",
     "team": "헤세드순",
-    "filledHours": 29
+    "filledHours": 35
   },
   {
     "id": "48",
@@ -389,7 +389,7 @@
     "department": "미디어커뮤니케이션학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 13
+    "filledHours": 19
   },
   {
     "id": "50",
@@ -413,7 +413,7 @@
     "department": "특수교육학과",
     "level": "순장",
     "team": "헤세드순",
-    "filledHours": 1
+    "filledHours": 7
   },
   {
     "id": "53",
@@ -462,5 +462,13 @@
     "level": "순원",
     "team": "제자순",
     "filledHours": 1
+  },
+  {
+    "id": "59",
+    "name": "이민하",
+    "department": "의공학과",
+    "level": "순장",
+    "team": "헤세드순",
+    "filledHours": 6
   }
 ]
