@@ -5,7 +5,7 @@
     "department": "의료IT학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 13
+    "filledHours": 15
   },
   {
     "id": "2",
@@ -21,7 +21,7 @@
     "department": "반도체공학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 32
+    "filledHours": 38
   },
   {
     "id": "4",
@@ -45,7 +45,7 @@
     "department": "의생명공학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 9
+    "filledHours": 11
   },
   {
     "id": "7",
@@ -53,7 +53,7 @@
     "department": "멀티미디어학부",
     "level": "순장",
     "team": "헤세드순",
-    "filledHours": 12
+    "filledHours": 19
   },
   {
     "id": "8",
@@ -61,7 +61,7 @@
     "department": "보건안전공학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 19
+    "filledHours": 21
   },
   {
     "id": "9",
@@ -69,7 +69,7 @@
     "department": "특수교육학과",
     "level": "순장",
     "team": "헤세드순",
-    "filledHours": 17
+    "filledHours": 19
   },
   {
     "id": "10",
@@ -77,7 +77,7 @@
     "department": "간호학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 7
+    "filledHours": 9
   },
   {
     "id": "11",
@@ -85,7 +85,7 @@
     "department": "간호학과",
     "level": "순장",
     "team": "예닮순",
-    "filledHours": 12
+    "filledHours": 13
   },
   {
     "id": "12",
@@ -173,7 +173,7 @@
     "department": "경영학과",
     "level": "순원",
     "team": "제자순",
-    "filledHours": 7
+    "filledHours": 9
   },
   {
     "id": "23",
@@ -261,7 +261,7 @@
     "department": "물리치료학과",
     "level": "순원",
     "team": "제자순",
-    "filledHours": 9
+    "filledHours": 11
   },
   {
     "id": "34",
@@ -293,7 +293,7 @@
     "department": "기계전기차공학과",
     "level": "순원",
     "team": "제자순",
-    "filledHours": 11
+    "filledHours": 15
   },
   {
     "id": "38",
@@ -341,7 +341,7 @@
     "department": "컴퓨터공학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 28
+    "filledHours": 29
   },
   {
     "id": "44",
@@ -349,7 +349,7 @@
     "department": "간호학과",
     "level": "순장",
     "team": "헤세드순",
-    "filledHours": 20
+    "filledHours": 21
   },
   {
     "id": "45",
@@ -357,7 +357,7 @@
     "department": "환경공학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 18
+    "filledHours": 25
   },
   {
     "id": "46",
@@ -381,7 +381,7 @@
     "department": "간호학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 6
+    "filledHours": 8
   },
   {
     "id": "49",
@@ -389,7 +389,7 @@
     "department": "미디어커뮤니케이션학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 19
+    "filledHours": 25
   },
   {
     "id": "50",
@@ -437,7 +437,7 @@
     "department": "간호학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 1
+    "filledHours": 3
   },
   {
     "id": "56",
@@ -453,7 +453,7 @@
     "department": "보건행정학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 1
+    "filledHours": 8
   },
   {
     "id": "58",
@@ -461,7 +461,7 @@
     "department": "특수교육학과",
     "level": "순원",
     "team": "제자순",
-    "filledHours": 1
+    "filledHours": 5
   },
   {
     "id": "59",
@@ -470,5 +470,13 @@
     "level": "순장",
     "team": "헤세드순",
     "filledHours": 6
+  },
+  {
+    "id": "60",
+    "name": "조효인",
+    "department": "상담치료학과",
+    "level": "순장",
+    "team": "예닮순",
+    "filledHours": 7
   }
 ]
