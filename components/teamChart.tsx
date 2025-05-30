@@ -50,7 +50,7 @@ export default function TeamChart({ teamName }: TeamChartProps) {
           <ScrollArea className="w-full h-[500px] overflow-y-scroll">
             <ChartContainer
               config={chartConfig}
-              className="min-h-[800px] w-full"
+              className="min-h-[1000px] w-full"
             >
               <BarChart layout="vertical" accessibilityLayer data={filterdata}>
                 <CartesianGrid vertical={true} horizontal={false} />
@@ -66,6 +66,7 @@ export default function TeamChart({ teamName }: TeamChartProps) {
                   dataKey="name"
                   tickLine={false}
                   axisLine={false}
+                  interval={0}
                 />
                 <Tooltip content={<CustomTooltip />} />
                 <Bar
