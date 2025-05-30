@@ -21,7 +21,7 @@
     "department": "반도체공학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 44
+    "filledHours": 50
   },
   {
     "id": "4",
@@ -45,7 +45,7 @@
     "department": "의생명공학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 11
+    "filledHours": 15
   },
   {
     "id": "7",
@@ -53,7 +53,7 @@
     "department": "멀티미디어학부",
     "level": "순장",
     "team": "헤세드순",
-    "filledHours": 22
+    "filledHours": 29
   },
   {
     "id": "8",
@@ -61,7 +61,7 @@
     "department": "보건안전공학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 21
+    "filledHours": 25
   },
   {
     "id": "9",
@@ -77,7 +77,7 @@
     "department": "간호학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 17
+    "filledHours": 22
   },
   {
     "id": "11",
@@ -165,7 +165,7 @@
     "department": "방사선학과",
     "level": "순원",
     "team": "제자순",
-    "filledHours": 2
+    "filledHours": 6
   },
   {
     "id": "22",
@@ -293,7 +293,7 @@
     "department": "기계전기차공학과",
     "level": "순원",
     "team": "제자순",
-    "filledHours": 19
+    "filledHours": 21
   },
   {
     "id": "38",
@@ -357,7 +357,7 @@
     "department": "환경공학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 29
+    "filledHours": 33
   },
   {
     "id": "46",
@@ -381,7 +381,7 @@
     "department": "간호학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 8
+    "filledHours": 13
   },
   {
     "id": "49",
@@ -389,7 +389,7 @@
     "department": "미디어커뮤니케이션학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 35
+    "filledHours": 39
   },
   {
     "id": "50",
@@ -397,7 +397,7 @@
     "department": "방사선화학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 5
+    "filledHours": 12
   },
   {
     "id": "51",
@@ -453,13 +453,13 @@
     "department": "보건행정학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 18
+    "filledHours": 30
   },
   {
     "id": "58",
     "name": "조현빈",
     "department": "특수교육학과",
-    "level": "순원",
+    "level": "순장",
     "team": "제자순",
     "filledHours": 9
   },
@@ -500,6 +500,14 @@
     "name": "엄성구",
     "department": "특수교육학과",
     "level": "순장",
+    "team": "제자순",
+    "filledHours": 4
+  },
+  {
+    "id": "64",
+    "name": "이동현",
+    "department": "전자IT기계자동차공학부",
+    "level": "순원",
     "team": "제자순",
     "filledHours": 4
   }
