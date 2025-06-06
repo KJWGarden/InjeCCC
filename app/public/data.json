@@ -21,7 +21,7 @@
     "department": "반도체공학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 57
+    "filledHours": 59
   },
   {
     "id": "4",
@@ -61,7 +61,7 @@
     "department": "보건안전공학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 35
+    "filledHours": 37
   },
   {
     "id": "9",
@@ -445,7 +445,7 @@
     "department": "특수교육학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 6
+    "filledHours": 8
   },
   {
     "id": "57",
