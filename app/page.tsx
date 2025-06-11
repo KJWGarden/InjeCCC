@@ -2,13 +2,42 @@
 import Toprating from "@/components/toprating";
 import Header from "./components/header";
 import Navbar from "@/components/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TeamChart from "@/components/teamChart";
 import TotalCal from "@/components/total";
 
 export default function HomeClient() {
   const [activeTab, setActiveTab] = useState("home");
-  const [isFinalizing] = useState(true);
+  const [isFinalizing] = useState(false);
+
+  useEffect(() => {
+    let timeoutId: NodeJS.Timeout | null = null;
+    let side: "left" | "right" = "left";
+    function launchConfetti() {
+      import("canvas-confetti").then((module) => {
+        const confetti = module.default;
+        const isDesktop =
+          typeof window !== "undefined" && window.innerWidth >= 1024;
+        const leftX = isDesktop ? 0.15 : 0;
+        const rightX = isDesktop ? 0.85 : 1;
+        confetti({
+          particleCount: 180,
+          spread: 80,
+          origin: {
+            x: side === "left" ? leftX : rightX,
+            y: 0.6,
+          },
+        });
+        side = side === "left" ? "right" : "left";
+        const nextDelay = 1500 + Math.random() * 1000;
+        timeoutId = setTimeout(launchConfetti, nextDelay);
+      });
+    }
+    launchConfetti();
+    return () => {
+      if (timeoutId) clearTimeout(timeoutId);
+    };
+  }, []);
   return (
     <div className="overflow-y-scroll relative min-h-screen">
       <div

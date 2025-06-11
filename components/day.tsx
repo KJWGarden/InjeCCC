@@ -3,38 +3,8 @@
 import { easeOut } from "motion";
 import { motion } from "motion/react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
-interface DDayProps {
-  targetDate: string;
-}
-
-export default function DDay({ targetDate }: DDayProps) {
-  const [dDayText, setDDayText] = useState("");
-
-  useEffect(() => {
-    const calculateDDay = () => {
-      const today = new Date();
-      const target = new Date(targetDate);
-
-      today.setHours(0, 0, 0, 0);
-      target.setHours(0, 0, 0, 0);
-
-      const diffTime = target.getTime() - today.getTime();
-      const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-
-      if (diffDays > 0) {
-        setDDayText(`D-${diffDays}`);
-      } else if (diffDays === 0) {
-        setDDayText(`D-Day`);
-      } else {
-        setDDayText(`D+${Math.abs(diffDays)}`);
-      }
-    };
-
-    calculateDDay();
-  }, [targetDate]);
-
+export default function DDay() {
   return (
     <motion.div
       whileHover={{
@@ -52,10 +22,13 @@ export default function DDay({ targetDate }: DDayProps) {
     >
       <Link href={"https://www.kccc.org/?p=sc#"}>
         <div className="flex flex-col items-center justify-center p-4 bg-white rounded-2xl shadow-md w-fit">
-          <span>갓같가는 여름수련회 전까지!</span>
-          <span className="text-2xl font-bold text-gray-800">{dDayText}</span>
-          <span className="text-xs pt-2 text-stone-500">
-            갓같가 시상식은 여수 전 캠퍼스채플 때 진행됩니다.
+          <span className="text-lg font-bold">갓같가 이벤트 종료!</span>
+          <span className="text-sm pt-2 font-bold">
+            참여해주신 모든 순장 순원 여러분 감사합니다!
+          </span>
+          <span className="text-xs pt-2 font-semibold text-stone-500 text-center">
+            앞으로의 여러분의 모든 삶이 <br />
+            갓과 같이하는 가치있는 시간으로 <br /> 가득하길 기도합니다
           </span>
         </div>
       </Link>

@@ -8,7 +8,21 @@
   }
 }
 
-
+@keyframes glossy-move {
+  0% {
+    left: -60%;
+    top: -20%;
+    transform: rotate(20deg);
+  }
+  100% {
+    left: 110%;
+    top: 60%;
+    transform: rotate(20deg);
+  }
+}
+.animate-glossy {
+  animation: glossy-move 0.4s linear infinite;
+}
 
 @layer base {
   :root {
@@ -65,8 +79,6 @@
     --chart-5: 340 75% 55%;
   }
 }
-
-
 
 @layer base {
   * {

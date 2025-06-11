@@ -13,7 +13,7 @@
     "department": "음악학과",
     "level": "순장",
     "team": "헤세드순",
-    "filledHours": 21
+    "filledHours": 26
   },
   {
     "id": "3",
@@ -21,7 +21,7 @@
     "department": "반도체공학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 59
+    "filledHours": 61
   },
   {
     "id": "4",
@@ -53,7 +53,7 @@
     "department": "멀티미디어학부",
     "level": "순장",
     "team": "헤세드순",
-    "filledHours": 41
+    "filledHours": 48
   },
   {
     "id": "8",
@@ -61,7 +61,7 @@
     "department": "보건안전공학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 37
+    "filledHours": 50
   },
   {
     "id": "9",
@@ -69,7 +69,7 @@
     "department": "특수교육학과",
     "level": "순장",
     "team": "헤세드순",
-    "filledHours": 21
+    "filledHours": 26
   },
   {
     "id": "10",
@@ -77,7 +77,7 @@
     "department": "간호학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 31
+    "filledHours": 33
   },
   {
     "id": "11",
@@ -125,7 +125,7 @@
     "department": "보건안전공학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 4
+    "filledHours": 9
   },
   {
     "id": "17",
@@ -261,7 +261,7 @@
     "department": "물리치료학과",
     "level": "순원",
     "team": "제자순",
-    "filledHours": 27
+    "filledHours": 43
   },
   {
     "id": "34",
@@ -317,7 +317,7 @@
     "department": "사회복지학과",
     "level": "순원",
     "team": "예닮순",
-    "filledHours": 8
+    "filledHours": 10
   },
   {
     "id": "41",
@@ -365,7 +365,7 @@
     "department": "물리치료학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 10
+    "filledHours": 18
   },
   {
     "id": "47",
@@ -389,7 +389,7 @@
     "department": "미디어커뮤니케이션학과",
     "level": "순장",
     "team": "제자순",
-    "filledHours": 47
+    "filledHours": 63
   },
   {
     "id": "50",
@@ -397,7 +397,7 @@
     "department": "방사선화학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 13
+    "filledHours": 19
   },
   {
     "id": "51",
@@ -445,7 +445,7 @@
     "department": "특수교육학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 8
+    "filledHours": 10
   },
   {
     "id": "57",
@@ -453,7 +453,7 @@
     "department": "보건행정학과",
     "level": "순원",
     "team": "헤세드순",
-    "filledHours": 40
+    "filledHours": 53
   },
   {
     "id": "58",
@@ -493,13 +493,13 @@
     "department": "보건안전공학과",
     "level": "순장",
     "team": "헤세드순",
-    "filledHours": 7
+    "filledHours": 12
   },
   {
     "id": "63",
     "name": "엄성구",
     "department": "특수교육학과",
-    "level": "순장",
+    "level": "순원",
     "team": "제자순",
     "filledHours": 6
   },
