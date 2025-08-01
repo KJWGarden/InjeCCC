@@ -1,0 +1,974 @@
+{
+  "nodes": [
+    {
+      "id": "01_배경태",
+      "name": "배경태",
+      "studentId": "01",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 15,
+      "color": "#FA4F40",
+      "joinYear": 2001
+    },
+    {
+      "id": "06_김판문",
+      "name": "김판문",
+      "studentId": "06",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2006
+    },
+    {
+      "id": "07_정성은",
+      "name": "정성은",
+      "studentId": "07",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2007
+    },
+    {
+      "id": "07_김재휘",
+      "name": "김재휘",
+      "studentId": "07",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2007
+    },
+    {
+      "id": "01_고진혁",
+      "name": "고진혁",
+      "studentId": "01",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2001
+    },
+    {
+      "id": "07_허준형",
+      "name": "허준형",
+      "studentId": "07",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2007
+    },
+    {
+      "id": "08_김병철",
+      "name": "김병철",
+      "studentId": "08",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2008
+    },
+    {
+      "id": "08_양종문",
+      "name": "양종문",
+      "studentId": "08",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2008
+    },
+    {
+      "id": "09_양경배",
+      "name": "양경배",
+      "studentId": "09",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2009
+    },
+    {
+      "id": "09_김혜명",
+      "name": "김혜명",
+      "studentId": "09",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2009
+    },
+    {
+      "id": "10_강향주",
+      "name": "강향주",
+      "studentId": "10",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2010
+    },
+    {
+      "id": "10_박예찬",
+      "name": "박예찬",
+      "studentId": "10",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2010
+    },
+    {
+      "id": "11_마영규",
+      "name": "마영규",
+      "studentId": "11",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2011
+    },
+    {
+      "id": "11_문승일",
+      "name": "문승일",
+      "studentId": "11",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2011
+    },
+    {
+      "id": "11_홍재선",
+      "name": "홍재선",
+      "studentId": "11",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2011
+    },
+    {
+      "id": "11_안정환",
+      "name": "안정환",
+      "studentId": "11",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2011
+    },
+    {
+      "id": "11_김태훈",
+      "name": "김태훈",
+      "studentId": "11",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2012
+    },
+    {
+      "id": "12_이주안",
+      "name": "이주안",
+      "studentId": "12",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2012
+    },
+    {
+      "id": "12_최만복",
+      "name": "최만복",
+      "studentId": "12",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2016
+    },
+    {
+      "id": "13_변훈",
+      "name": "변훈",
+      "studentId": "13",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2013
+    },
+    {
+      "id": "13_신승철",
+      "name": "신승철",
+      "studentId": "13",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2013
+    },
+    {
+      "id": "13_김주원",
+      "name": "김주원",
+      "studentId": "13",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2013
+    },
+    {
+      "id": "13_김주현",
+      "name": "김주현",
+      "studentId": "13",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2013
+    },
+    {
+      "id": "13_김성실",
+      "name": "김성실",
+      "studentId": "13",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2017
+    },
+    {
+      "id": "13_박민수",
+      "name": "박민수",
+      "studentId": "13",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2018
+    },
+    {
+      "id": "14_이기쁨",
+      "name": "이기쁨",
+      "studentId": "14",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2014
+    },
+    {
+      "id": "14_정용환",
+      "name": "정용환",
+      "studentId": "14",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2014
+    },
+    {
+      "id": "14_박찬민",
+      "name": "박찬민",
+      "studentId": "14",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2014
+    },
+    {
+      "id": "14_설민현",
+      "name": "설민현",
+      "studentId": "14",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2014
+    },
+    {
+      "id": "14_장성진",
+      "name": "장성진",
+      "studentId": "14",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2014
+    },
+    {
+      "id": "14_강성훈",
+      "name": "강성훈",
+      "studentId": "14",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2014
+    },
+    {
+      "id": "14_김정만",
+      "name": "김정만",
+      "studentId": "14",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2014
+    },
+    {
+      "id": "14_김민동",
+      "name": "김민동",
+      "studentId": "14",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2017
+    },
+    {
+      "id": "15_이창현",
+      "name": "이창현",
+      "studentId": "15",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2015
+    },
+    {
+      "id": "15_최찬민",
+      "name": "최찬민",
+      "studentId": "15",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2015
+    },
+    {
+      "id": "15_박민형",
+      "name": "박민형",
+      "studentId": "15",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2015
+    },
+    {
+      "id": "15_이수호",
+      "name": "이수호",
+      "studentId": "15",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2015
+    },
+    {
+      "id": "15_이성",
+      "name": "이성",
+      "studentId": "15",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2016
+    },
+    {
+      "id": "16_심동렬",
+      "name": "심동렬",
+      "studentId": "16",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2016
+    },
+    {
+      "id": "16_이현준",
+      "name": "이현준",
+      "studentId": "16",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2016
+    },
+    {
+      "id": "16_김도현",
+      "name": "김도현",
+      "studentId": "16",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2016
+    },
+    {
+      "id": "16_김경훈",
+      "name": "김경훈",
+      "studentId": "16",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2016
+    },
+    {
+      "id": "17_신현빈",
+      "name": "신현빈",
+      "studentId": "17",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2017
+    },
+    {
+      "id": "17_노재필",
+      "name": "노재필",
+      "studentId": "17",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2017
+    },
+    {
+      "id": "17_김희성",
+      "name": "김희성",
+      "studentId": "17",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2017
+    },
+    {
+      "id": "17_김광서",
+      "name": "김광서",
+      "studentId": "17",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2017
+    },
+    {
+      "id": "18_김도형",
+      "name": "김도형",
+      "studentId": "18",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2018
+    },
+    {
+      "id": "18_박영건",
+      "name": "박영건",
+      "studentId": "18",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2018
+    },
+    {
+      "id": "18_정민기",
+      "name": "정민기",
+      "studentId": "18",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2018
+    },
+    {
+      "id": "18_유현진",
+      "name": "유현진",
+      "studentId": "18",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2018
+    },
+    {
+      "id": "19_신태호",
+      "name": "신태호",
+      "studentId": "19",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2019
+    },
+    {
+      "id": "19_양승겸",
+      "name": "양승겸",
+      "studentId": "19",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2023
+    },
+    {
+      "id": "19_박미르",
+      "name": "박미르",
+      "studentId": "19",
+      "level": "나사렛",
+      "team": "제자",
+      "size": 12,
+      "color": "#FA4F40",
+      "joinYear": 2024
+    },
+    {
+      "id": "20_황민태",
+      "name": "황민태",
+      "studentId": "20",
+      "level": "순장",
+      "team": "제자",
+      "size": 10,
+      "color": "#727EE0",
+      "joinYear": 2020
+    },
+    {
+      "id": "20_김시온",
+      "name": "김시온",
+      "studentId": "20",
+      "level": "순장",
+      "team": "제자",
+      "size": 10,
+      "color": "#727EE0",
+      "joinYear": 2020
+    },
+    {
+      "id": "20_나의균",
+      "name": "나의균",
+      "studentId": "20",
+      "level": "순장",
+      "team": "제자",
+      "size": 10,
+      "color": "#727EE0",
+      "joinYear": 2020
+    },
+    {
+      "id": "20_신동건",
+      "name": "신동건",
+      "studentId": "20",
+      "level": "순장",
+      "team": "제자",
+      "size": 10,
+      "color": "#727EE0",
+      "joinYear": 2020
+    },
+    {
+      "id": "20_심민균",
+      "name": "심민균",
+      "studentId": "20",
+      "level": "순장",
+      "team": "제자",
+      "size": 10,
+      "color": "#727EE0",
+      "joinYear": 2023
+    },
+    {
+      "id": "21_신종웅",
+      "name": "신종웅",
+      "studentId": "21",
+      "level": "순장",
+      "team": "제자",
+      "size": 10,
+      "color": "#727EE0",
+      "joinYear": 2021
+    },
+    {
+      "id": "21_정창현",
+      "name": "정창현",
+      "studentId": "21",
+      "level": "순장",
+      "team": "제자",
+      "size": 10,
+      "color": "#727EE0",
+      "joinYear": 2021
+    },
+    {
+      "id": "21_손재형",
+      "name": "손재형",
+      "studentId": "21",
+      "level": "순장",
+      "team": "제자",
+      "size": 10,
+      "color": "#727EE0",
+      "joinYear": 2021
+    },
+    {
+      "id": "21_김정원",
+      "name": "김정원",
+      "studentId": "21",
+      "level": "순장",
+      "team": "제자",
+      "size": 10,
+      "color": "#727EE0",
+      "joinYear": 2024
+    },
+    {
+      "id": "22_박선민",
+      "name": "박선민",
+      "studentId": "22",
+      "level": "순장",
+      "team": "제자",
+      "size": 10,
+      "color": "#727EE0",
+      "joinYear": 2021
+    },
+    {
+      "id": "20_원종민",
+      "name": "원종민",
+      "studentId": "20",
+      "level": "순장",
+      "team": "제자",
+      "size": 10,
+      "color": "#727EE0",
+      "joinYear": 2020
+    },
+    {
+      "id": "22_배민성",
+      "name": "배민성",
+      "studentId": "22",
+      "level": "순장",
+      "team": "제자",
+      "size": 10,
+      "color": "#727EE0",
+      "joinYear": 2022
+    },
+    {
+      "id": "22_황은찬",
+      "name": "황은찬",
+      "studentId": "22",
+      "level": "순장",
+      "team": "제자",
+      "size": 10,
+      "color": "#727EE0",
+      "joinYear": 2022
+    },
+    {
+      "id": "23_이송현",
+      "name": "이송현",
+      "studentId": "23",
+      "level": "순장",
+      "team": "제자",
+      "size": 10,
+      "color": "#727EE0",
+      "joinYear": 2023
+    },
+    {
+      "id": "24_조현빈",
+      "name": "조현빈",
+      "studentId": "24",
+      "level": "순장",
+      "team": "제자",
+      "size": 10,
+      "color": "#727EE0",
+      "joinYear": 2024
+    },
+    {
+      "id": "24_김주성",
+      "name": "김주성",
+      "studentId": "24",
+      "level": "순장",
+      "team": "제자",
+      "size": 10,
+      "color": "#727EE0",
+      "joinYear": 2024
+    },
+    {
+      "id": "24_여준원",
+      "name": "여준원",
+      "studentId": "24",
+      "level": "순장",
+      "team": "제자",
+      "size": 10,
+      "color": "#727EE0",
+      "joinYear": 2024
+    }
+  ],
+  "edges": [
+    {
+      "source": "01_배경태",
+      "target": "06_김판문"
+    },
+    {
+      "source": "01_배경태",
+      "target": "07_정성은"
+    },
+    {
+      "source": "01_고진혁",
+      "target": "07_허준형"
+    },
+    {
+      "source": "06_김판문",
+      "target": "07_김재휘"
+    },
+    {
+      "source": "06_김판문",
+      "target": "10_강향주"
+    },
+    {
+      "source": "07_정성은",
+      "target": "08_양종문"
+    },
+    {
+      "source": "07_정성은",
+      "target": "11_안정환"
+    },
+    {
+      "source": "07_정성은",
+      "target": "13_김주원"
+    },
+    {
+      "source": "07_정성은",
+      "target": "13_김주현"
+    },
+    {
+      "source": "07_정성은",
+      "target": "14_강성훈"
+    },
+    {
+      "source": "07_정성은",
+      "target": "14_김정만"
+    },
+    {
+      "source": "14_강성훈",
+      "target": "14_김민동"
+    },
+    {
+      "source": "08_양종문",
+      "target": "09_양경배"
+    },
+    {
+      "source": "08_양종문",
+      "target": "13_신승철"
+    },
+    {
+      "source": "08_양종문",
+      "target": "14_설민현"
+    },
+    {
+      "source": "08_양종문",
+      "target": "14_장성진"
+    },
+    {
+      "source": "07_김재휘",
+      "target": "08_김병철"
+    },
+    {
+      "source": "07_김재휘",
+      "target": "12_이주안"
+    },
+    {
+      "source": "08_김병철",
+      "target": "09_김혜명"
+    },
+    {
+      "source": "09_김혜명",
+      "target": "11_김태훈"
+    },
+    {
+      "source": "09_김혜명",
+      "target": "13_변훈"
+    },
+    {
+      "source": "09_김혜명",
+      "target": "10_박예찬"
+    },
+    {
+      "source": "10_박예찬",
+      "target": "11_마영규"
+    },
+    {
+      "source": "10_박예찬",
+      "target": "11_문승일"
+    },
+    {
+      "source": "10_박예찬",
+      "target": "14_이기쁨"
+    },
+    {
+      "source": "10_박예찬",
+      "target": "14_정용환"
+    },
+    {
+      "source": "10_박예찬",
+      "target": "14_박찬민"
+    },
+    {
+      "source": "11_마영규",
+      "target": "15_이성"
+    },
+    {
+      "source": "14_설민현",
+      "target": "16_김경훈"
+    },
+    {
+      "source": "11_안정환",
+      "target": "15_이수호"
+    },
+    {
+      "source": "11_안정환",
+      "target": "12_최만복"
+    },
+    {
+      "source": "15_이수호",
+      "target": "20_원종민"
+    },
+    {
+      "source": "14_정용환",
+      "target": "15_이창현"
+    },
+    {
+      "source": "14_박찬민",
+      "target": "15_최찬민"
+    },
+    {
+      "source": "14_박찬민",
+      "target": "15_박민형"
+    },
+    {
+      "source": "14_박찬민",
+      "target": "16_김도현"
+    },
+    {
+      "source": "14_박찬민",
+      "target": "13_김성실"
+    },
+    {
+      "source": "14_박찬민",
+      "target": "17_김희성"
+    },
+    {
+      "source": "15_최찬민",
+      "target": "17_노재필"
+    },
+    {
+      "source": "15_최찬민",
+      "target": "18_정민기"
+    },
+    {
+      "source": "12_최만복",
+      "target": "17_김광서"
+    },
+    {
+      "source": "15_이성",
+      "target": "17_신현빈"
+    },
+    {
+      "source": "15_이성",
+      "target": "18_박영건"
+    },
+    {
+      "source": "17_신현빈",
+      "target": "18_김도형"
+    },
+    {
+      "source": "18_정민기",
+      "target": "20_김시온"
+    },
+    {
+      "source": "15_박민형",
+      "target": "16_이현준"
+    },
+    {
+      "source": "16_이현준",
+      "target": "20_나의균"
+    },
+    {
+      "source": "16_이현준",
+      "target": "19_신태호"
+    },
+    {
+      "source": "20_나의균",
+      "target": "21_손재형"
+    },
+    {
+      "source": "21_손재형",
+      "target": "24_조현빈"
+    },
+    {
+      "source": "17_김희성",
+      "target": "22_박선민"
+    },
+    {
+      "source": "18_박영건",
+      "target": "21_신종웅"
+    },
+    {
+      "source": "18_박영건",
+      "target": "19_양승겸"
+    },
+    {
+      "source": "18_박영건",
+      "target": "22_배민성"
+    },
+    {
+      "source": "18_박영건",
+      "target": "22_황은찬"
+    },
+    {
+      "source": "19_양승겸",
+      "target": "21_김정원"
+    },
+    {
+      "source": "19_신태호",
+      "target": "20_신동건"
+    },
+    {
+      "source": "19_신태호",
+      "target": "19_박미르"
+    },
+    {
+      "source": "19_신태호",
+      "target": "20_심민균"
+    },
+    {
+      "source": "20_심민균",
+      "target": "24_김주성"
+    },
+    {
+      "source": "20_신동건",
+      "target": "24_여준원"
+    },
+    {
+      "source": "10_강향주",
+      "target": "18_유현진"
+    },
+    {
+      "source": "10_강향주",
+      "target": "11_홍재선"
+    },
+    {
+      "source": "15_이창현",
+      "target": "20_황민태"
+    },
+    {
+      "source": "15_이창현",
+      "target": "16_심동렬"
+    },
+    {
+      "source": "16_심동렬",
+      "target": "21_정창현"
+    },
+    {
+      "source": "20_황민태",
+      "target": "23_이송현"
+    }
+  ]
+}

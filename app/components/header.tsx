@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -12,7 +13,9 @@ export default function Header() {
           className="border rounded-full"
         />
       </div>
-      <div>INJE CCC</div>
+      <Link href="/">
+        <div>INJE CCC</div>
+      </Link>
     </div>
   );
 }
