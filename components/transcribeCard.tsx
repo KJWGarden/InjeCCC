@@ -26,13 +26,17 @@ export default function TranscribeCard({
   return (
     <motion.div
       className="flex flex-col shadow-md border-black rounded-lg w-[150px] sm:w-[200px] h-fit px-4 py-2 hover:scale-105 transition-all duration-300 cursor-pointer"
+      style={{ willChange: "transform, opacity" }}
       onClick={onClick}
-      initial={{ x: 100, opacity: 0 }}
+      initial={{ x: 50, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{
-        duration: 0.6,
+        duration: 0.1,
         delay: 1.8 + index * 0.1,
-        ease: "easeOut",
+        ease: [0.25, 0.46, 0.45, 0.94],
+        type: "spring",
+        stiffness: 100,
+        damping: 20,
       }}
     >
       <div className="flex flex-row items-center gap-2">

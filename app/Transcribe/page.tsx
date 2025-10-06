@@ -18,7 +18,7 @@ export default function TranscribePage() {
           className="w-[90%] h-[90%] md:w-[50%] lg:h-[50%] flex justify-center items-center"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <DotLottieReact src="/writing.json" loop={true} autoplay={true} />
         </motion.div>
