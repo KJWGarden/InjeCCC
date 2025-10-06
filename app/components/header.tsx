@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="w-full sticky top-0 shadow-lg flex p-2 gap-4 items-center">
+    <div className="w-full h-fit sticky top-0 bg-white shadow-lg flex p-2 gap-4 items-center">
       <div>
         <Image
           src="/favicon.png"
