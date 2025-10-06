@@ -4,19 +4,19 @@
     "TeamName": "1순",
     "teamLeader": "박미르",
     "teamMembers": ["조현욱", "김진영", "조효인", "송금희", "최이지"],
-    "transcribe": "요한복음",
-    "goal": 100,
-    "filled": 20,
-    "currentWrite": "김진영"
+    "transcribe": "",
+    "goal": 0,
+    "filled": 0,
+    "currentWrite": "박미르"
   },
   {
     "id": "2",
     "TeamName": "2순",
     "teamLeader": "송에스더",
     "teamMembers": ["주하령", "임지윤", "조현빈", "황민태"],
-    "transcribe": "시편",
-    "goal": 100,
-    "filled": 40,
+    "transcribe": "",
+    "goal": 0,
+    "filled": 0,
     "currentWrite": "송에스더"
   },
   {
@@ -24,9 +24,9 @@
     "TeamName": "3순",
     "teamLeader": "송진경",
     "teamMembers": ["최혜원", "김온유", "장서진", "심민균"],
-    "transcribe": "스가랴",
-    "goal": 100,
-    "filled": 60,
+    "transcribe": "",
+    "goal": 0,
+    "filled": 0,
     "currentWrite": "송진경"
   },
   {
