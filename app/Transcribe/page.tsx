@@ -18,7 +18,7 @@ export default function TranscribePage() {
           className="w-[90%] h-[90%] md:w-[50%] lg:h-[50%] flex justify-center items-center"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
         >
           <DotLottieReact src="/writing.json" loop={true} autoplay={true} />
         </motion.div>
@@ -26,7 +26,7 @@ export default function TranscribePage() {
           className="text-2xl font-bold py-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.8 }}
+          transition={{ duration: 0.2, delay: 0.6 }}
         >
           인제대학교 CCC 성경필사순 🌱
         </motion.div>
