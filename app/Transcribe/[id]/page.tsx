@@ -3,22 +3,11 @@
 import React from "react";
 import Header from "../../components/header";
 import { ProgressDemo } from "@/components/progressBar";
-import transcribeData from "@/app/public/transcribeData.json";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-
-interface TranscribeData {
-  id: string;
-  TeamName: string;
-  teamLeader: string;
-  teamMembers: string[];
-  transcribe: string;
-  goal: number;
-  filled: number;
-  currentWrite: string;
-}
+import { useScriptureDetail } from "@/hooks/useScriptureDetail";
 
 export default function TranscribeDetailPage({
   params,
@@ -26,19 +15,36 @@ export default function TranscribeDetailPage({
   params: { id: string };
 }) {
   const router = useRouter();
-  const teamData = transcribeData.find(
-    (team: TranscribeData) => team.id === params.id
-  );
+  const { data: detailData, isLoading, error } = useScriptureDetail(params.id);
 
-  if (!teamData) {
+  if (isLoading) {
     return (
-      <div className="flex items-center justify-center h-screen">
-        <div>팀을 찾을 수 없습니다.</div>
-      </div>
+      <>
+        <Header />
+        <div className="flex items-center justify-center h-screen">
+          <div className="text-xl">로딩 중...</div>
+        </div>
+      </>
     );
   }
 
-  const progressPercentage = (teamData.filled / teamData.goal) * 100;
+  if (error || !detailData) {
+    return (
+      <>
+        <Header />
+        <div className="flex items-center justify-center h-screen">
+          <div className="text-xl text-red-500">데이터를 찾을 수 없습니다.</div>
+        </div>
+      </>
+    );
+  }
+
+  const progressPercentage =
+    detailData.progress.target_chapters > 0
+      ? (detailData.progress.completed_chapters /
+          detailData.progress.target_chapters) *
+        100
+      : 0;
 
   return (
     <>
@@ -65,11 +71,14 @@ export default function TranscribeDetailPage({
                 <Image src="/순.png" alt="팀 이미지" width={100} height={100} />
               </div>
               <div>
-                <h1 className="text-2xl font-bold">{teamData.TeamName}</h1>
-                <p className="text-gray-600">순장: {teamData.teamLeader}</p>
-                {teamData.transcribe && (
+                <h1 className="text-2xl font-bold">{detailData.group.name}</h1>
+                <p className="text-gray-600">
+                  순장:{" "}
+                  {detailData.leader?.name || detailData.group.leader_user_id}
+                </p>
+                {detailData.progress.bible_name && (
                   <p className="text-blue-600 font-medium">
-                    {teamData.transcribe} 필사중
+                    {detailData.progress.bible_name} 필사중
                   </p>
                 )}
               </div>
@@ -80,7 +89,8 @@ export default function TranscribeDetailPage({
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm font-medium">필사 진행률</span>
                 <span className="text-sm text-gray-600">
-                  {teamData.filled} / {teamData.goal} (
+                  {detailData.progress.completed_chapters} /{" "}
+                  {detailData.progress.target_chapters} (
                   {Math.round(progressPercentage)}%)
                 </span>
               </div>
@@ -97,63 +107,13 @@ export default function TranscribeDetailPage({
           >
             <h2 className="text-xl font-bold mb-4">팀원 목록</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-              {/* 팀장 */}
-              <div
-                className={`flex items-center gap-3 p-3 rounded-lg shadow-md ${
-                  teamData.currentWrite === teamData.teamLeader
-                    ? "bg-blue-100 border-2 border-blue-300"
-                    : "bg-yellow-50"
-                }`}
-              >
-                <div className="w-10 h-10 rounded-full overflow-hidden shadow-sm">
-                  <Image
-                    src="/순.png"
-                    alt="팀장 이미지"
-                    width={40}
-                    height={40}
-                  />
-                </div>
-                <div className="flex flex-row justify-between items-center w-full">
-                  <div className="flex flex-col">
-                    <span
-                      className={`font-medium ${
-                        teamData.currentWrite === teamData.teamLeader
-                          ? "text-blue-700"
-                          : "text-yellow-800"
-                      }`}
-                    >
-                      {teamData.teamLeader}
-                    </span>
-                    <span
-                      className={`text-xs font-medium ${
-                        teamData.currentWrite === teamData.teamLeader
-                          ? "text-blue-600"
-                          : "text-yellow-600"
-                      }`}
-                    >
-                      {teamData.currentWrite === teamData.teamLeader
-                        ? "필사 중"
-                        : "순장"}
-                    </span>
-                  </div>
-                  {teamData.currentWrite === teamData.teamLeader && (
-                    <div className="w-24 h-10">
-                      <DotLottieReact
-                        src="/pencil.json"
-                        loop={true}
-                        autoplay={true}
-                      />
-                    </div>
-                  )}
-                </div>
-              </div>
-
               {/* 팀원들 */}
-              {teamData.teamMembers.map((member, index) => {
-                const isCurrentlyWriting = teamData.currentWrite === member;
+              {detailData.members.map((member) => {
+                const isCurrentlyWriting =
+                  detailData.progress.current_scripter === member.name;
                 return (
                   <div
-                    key={index}
+                    key={member.id}
                     className={`flex items-center gap-3 p-3 rounded-lg transition-all ${
                       isCurrentlyWriting
                         ? "bg-blue-100 border-2 border-blue-300 shadow-md"
@@ -175,7 +135,7 @@ export default function TranscribeDetailPage({
                             isCurrentlyWriting ? "text-blue-700" : ""
                           }`}
                         >
-                          {member}
+                          {member.name}
                         </span>
                         {isCurrentlyWriting && (
                           <span className="text-xs text-blue-600 font-medium">

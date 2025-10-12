@@ -2,17 +2,13 @@ import React from "react";
 import { ProgressDemo } from "./progressBar";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
-interface TranscribeData {
+type TranscribeData = {
   id: string;
-  TeamName: string;
-  teamLeader: string;
-  teamMembers: string[];
-  transcribe: string;
-  goal: number;
-  filled: number;
-  currentWrite: string;
-}
+  name: string;
+  bible_name: string | null;
+  completed_chapters: number;
+  target_chapters: number;
+};
 
 export default function TranscribeCard({
   transcribe,
@@ -44,16 +40,23 @@ export default function TranscribeCard({
           <Image src="/순.png" alt="image" width={100} height={100} />
         </div>
         <div className="flex flex-col">
-          <div className="text-lg font-bold">{transcribe.TeamName}</div>
-          {transcribe.transcribe === "" ? (
+          <div className="text-lg font-bold">{transcribe.name}</div>
+          {transcribe.bible_name === null || transcribe.bible_name === "" ? (
             <div className="text-sm text-gray-500">미정</div>
           ) : (
-            <div className="text-sm text-gray-500">{transcribe.transcribe}</div>
+            <div className="text-sm text-gray-500">{transcribe.bible_name}</div>
           )}
         </div>
       </div>
       <div>
-        <ProgressDemo value={(transcribe.filled / transcribe.goal) * 100} />
+        <ProgressDemo
+          value={
+            transcribe.target_chapters > 0
+              ? (transcribe.completed_chapters / transcribe.target_chapters) *
+                100
+              : 0
+          }
+        />
       </div>
     </motion.div>
   );

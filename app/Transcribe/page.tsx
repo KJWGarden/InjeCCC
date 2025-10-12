@@ -3,13 +3,38 @@
 import React from "react";
 import Header from "../components/header";
 import TranscribeCard from "@/components/transcribeCard";
-import transcribeData from "@/app/public/transcribeData.json";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
+import { useScriptureProgress } from "@/hooks/useScriptureProgress";
+import { ScriptureProgress } from "@/types/scripture_progress";
 
 export default function TranscribePage() {
   const router = useRouter();
+  const { data: progressData, isLoading, error } = useScriptureProgress();
+
+  if (isLoading) {
+    return (
+      <>
+        <Header />
+        <div className="w-full h-screen flex justify-center items-center">
+          <div className="text-xl">로딩 중...</div>
+        </div>
+      </>
+    );
+  }
+
+  if (error || !progressData) {
+    return (
+      <>
+        <Header />
+        <div className="w-full h-screen flex justify-center items-center">
+          <div className="text-xl text-red-500">오류가 발생했습니다.</div>
+        </div>
+      </>
+    );
+  }
+
   return (
     <>
       <Header />
@@ -33,13 +58,19 @@ export default function TranscribePage() {
       </div>
       <div className="w-full h-full flex justify-center items-center pb-8">
         <div className="w-[90%] h-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center items-center">
-          {transcribeData.map((transcribe, index) => (
+          {progressData.map((progress: ScriptureProgress, index) => (
             <TranscribeCard
-              key={transcribe.id}
-              transcribe={transcribe}
+              key={progress.id}
+              transcribe={{
+                id: progress.id,
+                name: progress.scripture_name,
+                bible_name: progress.bible_name,
+                completed_chapters: progress.completed_chapters,
+                target_chapters: progress.target_chapters,
+              }}
               index={index}
               onClick={() => {
-                router.push(`/Transcribe/${transcribe.id}`);
+                router.push(`/Transcribe/${progress.user_id}`);
               }}
             />
           ))}
