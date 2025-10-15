@@ -16,18 +16,18 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "인제대 CCC",
-  description: "인제대 CCC와 함께하는 갓같가",
+  description: "인제대 CCC 홈페이지",
   icons: {
     icon: "/favicon.png",
   },
   openGraph: {
     title: "INJE CCC",
-    description: "INJE CCC 갓같가 가치를 채우는 시간",
+    description: "INJE CCC 홈페이지",
     url: "https://inje-ccc.vercel.app",
     siteName: "INJE CCC",
     images: [
       {
-        url: "https://inje-ccc.vercel.app/cover.jpg",
+        url: "https://inje-ccc.vercel.app/favicon.png",
         width: 1200,
         height: 630,
         alt: "INJE CCC OpenGraph Image",
