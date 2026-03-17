@@ -1,21 +1,43 @@
+"use client";
+
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import {
   Sheet,
-  SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { TextSearch } from "lucide-react";
+import type { GenealogyMember } from "@/types/genealogy";
 
-export function GeneologySheet() {
+interface GeneologySheetProps {
+  members: GenealogyMember[];
+  onSelectMember: (memberId: string) => void;
+}
+
+export function GeneologySheet({ members, onSelectMember }: GeneologySheetProps) {
+  const [query, setQuery] = useState("");
+  const [open, setOpen] = useState(false);
+
+  const results = query.trim()
+    ? members.filter(
+        (m) =>
+          m.name.includes(query.trim()) ||
+          m.student_id.includes(query.trim())
+      )
+    : [];
+
+  const handleSelect = (memberId: string) => {
+    onSelectMember(memberId);
+    setOpen(false);
+    setQuery("");
+  };
+
   return (
-    <Sheet>
+    <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
         <Button variant="outline">
           <TextSearch />
@@ -23,27 +45,38 @@ export function GeneologySheet() {
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
-          <SheetTitle>자세히 보기</SheetTitle>
-          <SheetDescription>
-            원하는 옵션을 선택해 자세히 보세요.
-          </SheetDescription>
+          <SheetTitle>멤버 검색</SheetTitle>
         </SheetHeader>
-        <div className="grid flex-1 auto-rows-min gap-6 px-4">
-          <div className="grid gap-3">
-            <Label htmlFor="sheet-demo-name">Name</Label>
-            <Input id="sheet-demo-name" defaultValue="Pedro Duarte" />
-          </div>
-          <div className="grid gap-3">
-            <Label htmlFor="sheet-demo-username">Username</Label>
-            <Input id="sheet-demo-username" defaultValue="@peduarte" />
-          </div>
+        <div className="px-4 mt-4">
+          <Input
+            placeholder="이름 또는 학번으로 검색"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            autoFocus
+          />
         </div>
-        <SheetFooter>
-          <Button type="submit">Save changes</Button>
-          <SheetClose asChild>
-            <Button variant="outline">Close</Button>
-          </SheetClose>
-        </SheetFooter>
+        <div className="flex-1 overflow-y-auto px-4 mt-4">
+          {query.trim() && results.length === 0 && (
+            <p className="text-sm text-muted-foreground text-center py-4">
+              검색 결과가 없습니다.
+            </p>
+          )}
+          <ul className="space-y-1">
+            {results.map((m) => (
+              <li key={m.id}>
+                <button
+                  className="w-full text-left px-3 py-2 rounded-md hover:bg-muted transition-colors"
+                  onClick={() => handleSelect(m.id)}
+                >
+                  <span className="font-medium text-sm">{m.name}</span>
+                  <span className="text-xs text-muted-foreground ml-2">
+                    {m.student_id}학번 · {m.level} · {m.team}
+                  </span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
       </SheetContent>
     </Sheet>
   );

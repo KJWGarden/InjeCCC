@@ -7,7 +7,7 @@ export default function HomeClient() {
   const router = useRouter();
 
   useEffect(() => {
-    router.push("/Transcribe");
+    router.push("/geneology");
   }, [router]);
 
   return (
