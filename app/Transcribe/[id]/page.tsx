@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { useScriptureDetail } from "@/hooks/useScriptureDetail";
+import { LastUpdated } from "@/components/lastUpdated";
 
 export default function TranscribeDetailPage({
   params,
@@ -51,13 +52,16 @@ export default function TranscribeDetailPage({
       <Header />
       <div className="w-full min-h-screen p-4">
         <div className="max-w-4xl mx-auto">
-          {/* 뒤로가기 버튼 */}
-          <button
-            onClick={() => router.back()}
-            className="mb-6 px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg transition-colors"
-          >
-            ← 뒤로가기
-          </button>
+          <div className="flex justify-between items-center mb-2">
+            {/* 뒤로가기 버튼 */}
+            <button
+              onClick={() => router.back()}
+              className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg transition-colors"
+            >
+              ← 뒤로가기
+            </button>
+            <LastUpdated date={detailData.progress.updated_at} />
+          </div>
 
           {/* 팀 정보 헤더 */}
           <motion.div

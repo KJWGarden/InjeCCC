@@ -75,7 +75,12 @@ export default function AwardPage() {
     .slice(0, 3);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-white py-12">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-white py-12 relative">
+      <div className="absolute top-4 right-4">
+        <span className="text-xs text-gray-400 whitespace-nowrap">
+          최종 수정: 2025. 03. 17.
+        </span>
+      </div>
       <h1 className="text-4xl font-extrabold mb-10 text-center drop-shadow-lg">
         갓같가 시상식
       </h1>

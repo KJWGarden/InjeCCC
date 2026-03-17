@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { useScriptureProgress } from "@/hooks/useScriptureProgress";
 import { ScriptureProgress } from "@/types/scripture_progress";
+import { LastUpdated } from "@/components/lastUpdated";
 
 export default function TranscribeClient() {
   const router = useRouter();
@@ -35,9 +36,18 @@ export default function TranscribeClient() {
     );
   }
 
+  const lastUpdatedAt = progressData.reduce<Date | null>((max, p) => {
+    const d = p.updated_at ? new Date(p.updated_at) : null;
+    if (!d || isNaN(d.getTime())) return max;
+    return !max || d > max ? d : max;
+  }, null);
+
   return (
     <>
       <Header />
+      <div className="flex justify-end px-4 pt-2">
+        <LastUpdated date={lastUpdatedAt} />
+      </div>
       <div className="w-full h-full flex justify-center items-center flex-col">
         <motion.div
           className="w-[90%] h-[90%] md:w-[50%] lg:h-[50%] flex justify-center items-center"
