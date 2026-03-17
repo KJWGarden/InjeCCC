@@ -39,8 +39,13 @@ export function GeneologySheet({ members, onSelectMember }: GeneologySheetProps)
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button variant="outline">
-          <TextSearch />
+        <Button
+          variant="outline"
+          size="sm"
+          className="gap-1.5 font-medium border-indigo-300/60 bg-indigo-500/5 text-indigo-700 hover:bg-indigo-500/10 hover:border-indigo-300/80 shadow-[0_0_6px_rgba(99,102,241,0.2)] hover:shadow-[0_0_8px_rgba(99,102,241,0.25)] transition-shadow"
+        >
+          <TextSearch className="h-4 w-4 shrink-0" />
+          <span>검색</span>
         </Button>
       </SheetTrigger>
       <SheetContent>

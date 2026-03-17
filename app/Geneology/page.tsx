@@ -128,9 +128,9 @@ export default function GeneologyPage() {
 
         {/* 오버레이 컨트롤 */}
         <div className="absolute inset-x-0 top-0 z-10 px-3 sm:px-4 pt-2 sm:pt-3 flex flex-col gap-1.5 sm:gap-2">
-          {/* 1행: 순 선택 */}
-          <div className="flex justify-between items-center gap-2">
-            <Tabs value={selectedTeam} onValueChange={setSelectedTeam}>
+          {/* 1행: 순 선택 + 검색 */}
+          <div className="flex justify-between items-center gap-2 min-w-0">
+            <Tabs value={selectedTeam} onValueChange={setSelectedTeam} className="min-w-0 flex-1 sm:flex-initial">
               <TabsList className="h-8 sm:h-9">
                 {TEAMS.map((team) => (
                   <TabsTrigger key={team} value={team} className="text-xs sm:text-sm px-2 sm:px-3">
@@ -139,14 +139,20 @@ export default function GeneologyPage() {
                 ))}
               </TabsList>
             </Tabs>
-            <span className="hidden sm:inline-flex">
-              <LastUpdated date={lastUpdatedAt} />
-            </span>
+            <div className="flex items-center gap-2 shrink-0">
+              <GeneologySheet
+                members={genealogyData.members}
+                onSelectMember={handleSelectMember}
+              />
+              <span className="hidden sm:inline-flex">
+                <LastUpdated date={lastUpdatedAt} />
+              </span>
+            </div>
           </div>
 
-          {/* 2행: 뷰 모드 + 정렬/검색 + 모바일 최종수정 */}
+          {/* 2행: 뷰 모드 + 정렬 + 모바일 최종수정 */}
           <div className="flex justify-between items-center gap-2">
-            <div className="flex items-center gap-2 sm:gap-3">
+            <div className="flex items-center gap-2 sm:gap-3 min-w-0">
               <Tabs value={viewMode} onValueChange={setViewMode}>
                 <TabsList className="h-8 sm:h-9">
                   <TabsTrigger value="tree" className="text-xs sm:text-sm px-2 sm:px-3">순 계보</TabsTrigger>
@@ -155,7 +161,7 @@ export default function GeneologyPage() {
               </Tabs>
 
               {viewMode === "graph" && (
-                <div className="flex gap-2 sm:gap-3">
+                <div className="flex gap-2 sm:gap-3 shrink-0">
                   <label className="flex items-center gap-1">
                     <input
                       type="radio"
@@ -184,26 +190,11 @@ export default function GeneologyPage() {
                   </label>
                 </div>
               )}
-
-              {viewMode !== "graph" && (
-                <span className="sm:hidden">
-                  <LastUpdated date={lastUpdatedAt} />
-                </span>
-              )}
             </div>
 
-            {viewMode === "graph" && (
-              <span className="sm:hidden">
-                <LastUpdated date={lastUpdatedAt} />
-              </span>
-            )}
-
-            {viewMode === "tree" && (
-              <GeneologySheet
-                members={genealogyData.members}
-                onSelectMember={handleSelectMember}
-              />
-            )}
+            <span className="sm:hidden shrink-0">
+              <LastUpdated date={lastUpdatedAt} />
+            </span>
           </div>
         </div>
       </div>
