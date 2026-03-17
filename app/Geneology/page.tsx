@@ -7,10 +7,49 @@ import { GeneologySheet } from "@/components/geneologySheet";
 export default function GeneologyPage() {
   const [isClient, setIsClient] = useState(false);
   const [sortBy, setSortBy] = useState<"studentId" | "joinYear">("studentId");
+  const [containerWidth, setContainerWidth] = useState<number | null>(null);
+
+  // 컨테이너 너비에 따라 0.35~1 사이의 스케일 팩터 계산
+  const scaleFactor =
+    typeof window === "undefined" || containerWidth === null
+      ? 1
+      : Math.max(0.35, Math.min(1, containerWidth / 1280));
 
   useEffect(() => {
     setIsClient(true);
   }, []);
+
+  // sigma-container 크기 관찰
+  useEffect(() => {
+    if (!isClient) return;
+
+    const container = document.getElementById("sigma-container");
+    if (!container) return;
+
+    const updateWidth = () => {
+      const width = container.getBoundingClientRect().width;
+      setContainerWidth((prev) => {
+        // 불필요한 리렌더를 막기 위해 breakpoint 단위로만 변경
+        if (prev === null) return width;
+        const prevBucket =
+          prev < 640 ? "mobile" : prev < 1024 ? "tablet" : "desktop";
+        const nextBucket =
+          width < 640 ? "mobile" : width < 1024 ? "tablet" : "desktop";
+        return prevBucket === nextBucket ? prev : width;
+      });
+    };
+
+    updateWidth();
+
+    const resizeObserver = new ResizeObserver(() => {
+      updateWidth();
+    });
+    resizeObserver.observe(container);
+
+    return () => {
+      resizeObserver.disconnect();
+    };
+  }, [isClient]);
 
   useEffect(() => {
     if (!isClient) return;
@@ -189,7 +228,8 @@ export default function GeneologyPage() {
         // 각 노드의 깊이 계산 및 크기 업데이트
         genealogyData.nodes.forEach((node) => {
           const depth = calculateDepth(node.id);
-          const newSize = Math.max(8, Math.min(20, 8 + depth * 2)); // 깊이에 따라 8~20 사이로 크기 조정
+          const baseSize = Math.max(8, Math.min(20, 8 + depth * 2)); // 깊이에 따라 8~20 사이로 크기 조정
+          const newSize = baseSize * scaleFactor;
 
           graph.setNodeAttribute(node.id, "size", newSize);
         });
@@ -207,9 +247,16 @@ export default function GeneologyPage() {
 
         // Create the sigma
         const renderer = new Sigma(graph, container, {
-          minCameraRatio: 0.5,
+          minCameraRatio: 0.25 * scaleFactor,
           maxCameraRatio: 2,
         });
+
+        // 노드 크기에 맞춰 레이블 표시 임계값 조정
+        const baseLabelThreshold = 10;
+        renderer.setSetting(
+          "labelRenderedSizeThreshold",
+          baseLabelThreshold * scaleFactor
+        );
 
         //
         // Drag'n'drop feature
@@ -269,7 +316,7 @@ export default function GeneologyPage() {
       .catch((error) => {
         console.error("Error loading graph libraries:", error);
       });
-  }, [isClient, sortBy]); // Add sortBy as dependency
+  }, [isClient, sortBy, scaleFactor]); // 화면 크기, 정렬 기준 변경 시 그래프 재생성
 
   if (!isClient) {
     return (
