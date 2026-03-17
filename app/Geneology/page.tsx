@@ -15,7 +15,7 @@ export default function GeneologyPage() {
   const [sortBy, setSortBy] = useState<"studentId" | "joinYear">("studentId");
   const [selectedTeam, setSelectedTeam] = useState<string>("제자");
   const [focusNodeId, setFocusNodeId] = useState<string | null>(null);
-  const [viewMode, setViewMode] = useState<string>("graph");
+  const [viewMode, setViewMode] = useState<string>("tree");
 
   const handleSelectMember = useCallback(
     (memberId: string) => {
@@ -149,8 +149,8 @@ export default function GeneologyPage() {
             <div className="flex items-center gap-2 sm:gap-3">
               <Tabs value={viewMode} onValueChange={setViewMode}>
                 <TabsList className="h-8 sm:h-9">
-                  <TabsTrigger value="graph" className="text-xs sm:text-sm px-2 sm:px-3">그래프</TabsTrigger>
-                  <TabsTrigger value="tree" className="text-xs sm:text-sm px-2 sm:px-3">트리</TabsTrigger>
+                  <TabsTrigger value="tree" className="text-xs sm:text-sm px-2 sm:px-3">순 계보</TabsTrigger>
+                  <TabsTrigger value="graph" className="text-xs sm:text-sm px-2 sm:px-3">순의 원형</TabsTrigger>
                 </TabsList>
               </Tabs>
 
